@@ -24,8 +24,23 @@ snippet afte
 		${2}
 	});
 #Node.js
+snippet as
+	assert(${1}, ${2});
+	${3}
+snippet as.eq
+	assert.equal(${1}, ${2});
+	${3}
+snippet as.d
+	assert.deepEqual(${1}, ${2});
+	${3}
+snippet as.t
+	assert.throws(function(){
+		${1}
+	}, /Error:/);
+	${2}
 snippet req
 	require('${1}')${2};
+	${3}
 snippet use
 	'use strict';
 	${1}
