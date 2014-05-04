@@ -44,6 +44,9 @@ snippet req
 snippet use
 	'use strict';
 	${1}
+# defineProperty
+snippet defp
+	Object.defineProperty(${1}, '${2}', ${3});
 # Prototype
 snippet proto
 	${1:class_name}.prototype.${2:method_name} =
