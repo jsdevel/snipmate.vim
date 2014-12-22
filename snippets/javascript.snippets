@@ -1,26 +1,31 @@
+#Amd
+snippet def
+	define([${1}], function() {
+		${2}
+	});
 #Mocha
 snippet des
-	describe('${1}', function(){
+	describe('${1}', function() {
 		${2}
 	});
 snippet it
-	it('${1}', function(${2}){
+	it('${1}', function(${2}) {
 		${3}
 	});
 snippet bef
-	before(function(${1}){
+	before(function(${1}) {
 		${2}
 	});
 snippet aft
-	after(function(${1}){
+	after(function(${1}) {
 		${2}
 	});
 snippet befe
-	beforeEach(function(${1}){
+	beforeEach(function(${1}) {
 		${2}
 	});
 snippet afte
-	afterEach(function(${1}){
+	afterEach(function(${1}) {
 		${2}
 	});
 #Node.js
@@ -34,7 +39,7 @@ snippet as.d
 	assert.deepEqual(${1}, ${2});
 	${3}
 snippet as.t
-	assert.throws(function(){
+	assert.throws(function() {
 		${1}
 	}, /Error:/);
 	${2}
@@ -95,8 +100,8 @@ snippet case
 		break;
 	${3}
 snippet fori
-	for(${1:} in ${2:}){
-		if($2.hasOwnProperty($1)){
+	for(${1:} in ${2:}) {
+		if($2.hasOwnProperty($1)) {
 			${3}
 		}
 	}
